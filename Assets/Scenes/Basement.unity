@@ -160,7 +160,7 @@ Transform:
   m_GameObject: {fileID: 144996799}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.49, y: 4.29, z: 0.02585424}
+  m_LocalPosition: {x: -8.49, y: 3.91, z: 0.02585424}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -330,7 +330,7 @@ Transform:
   m_GameObject: {fileID: 1906011660}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.42, y: 3.48, z: 0.02585424}
+  m_LocalPosition: {x: 3.42, y: 3.33, z: 0.02585424}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -350,7 +350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2775823022549989944, guid: e80900e695078864e941e67dad6efb0e, type: 3}
       propertyPath: spawnPoint
-      value: SpawnPointUp
+      value: SpawnPointHouse
       objectReference: {fileID: 0}
     - target: {fileID: 2775823022549989944, guid: e80900e695078864e941e67dad6efb0e, type: 3}
       propertyPath: sceneToLoad

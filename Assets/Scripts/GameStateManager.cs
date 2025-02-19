@@ -4,7 +4,37 @@ using UnityEngine;
 
 public class GameStateManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameManager gameManager;
+
+  public enum GameState
+    {
+        Gameplay_State,
+        Paused_State
+
+
+    }
+    
+    public GameState currentState { get; private set; }
+
+    [SerializeField] private string currentStateDebug;
+    [SerializeField] private string lastStateDebug;
+
+
+
+    public void ChangeState(GameState newState)
+    {
+        lastStateDebug = currentState.ToString();
+        currentState = newState;
+        HandleStateChange(newState);
+        currentStateDebug = currentState.ToString();
+    }
+
+    private void HandleStateChange(GameState state)
+    {
+
+
+    }
+
     void Start()
     {
         

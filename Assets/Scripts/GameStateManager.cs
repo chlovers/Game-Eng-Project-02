@@ -82,12 +82,48 @@ public class GameStateManager : MonoBehaviour
             }
         }
 
-        Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.name == "Main Menu")
-        {
-            ChangeState (GameState.MainMenu_State);
 
-        }
+
     }
+
+    public void Playbutton()
+    {
+        SceneManager.LoadScene("GamePlay");
+        ChangeState(GameState.Gameplay_State);
+
+
+    }
+
+    public void ReturntoMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+        ChangeState(GameState.MainMenu_State);
+
+    }
+
+    public void resumebutton()
+    {
+        ChangeState(GameState.Gameplay_State);
+
+    }
+
+    public void optionsbutton() 
+    {
+    
+    gameManager.iManager.EnableOptions();
+    
+    }
+    public void pausebutton()
+    { 
+        gameManager.iManager.EnablePause();
+    }
+
+
+    public void Quitbutton()
+    {
+        Application.Quit();
+
+    }
+
 }

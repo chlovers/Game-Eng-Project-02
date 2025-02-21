@@ -9,18 +9,9 @@ public class LevelManager : MonoBehaviour
 {
     public GameObject Player;
     private string Spawnpoint;
+    public GameManager GameManager;
 
-    public void Playbutton()
-    {
-        SceneManager.LoadScene("GamePlay");
-        
-    }
 
-    public void Quitbutton()
-    {
-        Application.Quit();
-
-    }
     public void Start()
     {
         Player = GameObject.FindWithTag("Player");

@@ -56,7 +56,12 @@ public class Interactionobject : MonoBehaviour
      
     IEnumerator fadeout()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1.5f);
         signtxt.SetActive(false);
+    }
+
+    IEnumerator Fadein()
+    {
+        yield return new WaitForSeconds(1.5f);
     }
 }

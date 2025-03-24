@@ -20,7 +20,14 @@ public class Objectinteract : MonoBehaviour
         if (collision.CompareTag("Pickup"))
         {
             obj = collision.gameObject;
+            
         }
+
+        if (collision.CompareTag("Info"))
+        {
+            obj = collision.gameObject;
+        }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -30,6 +37,10 @@ public class Objectinteract : MonoBehaviour
             obj = null;
         }
 
-        
+        if (collision.CompareTag("Info"))
+        {
+            obj = null;
+        }
+
     }
 }
